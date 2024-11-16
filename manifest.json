@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Duplicate File Detector",
+    "version": "1.0",
+    "description": "Detects and prevents duplicate file downloads.",
+    "permissions": ["downloads"],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "host_permissions": [
+        "http://localhost:3000/*"
+    ]
+}
