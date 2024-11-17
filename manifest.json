@@ -3,7 +3,7 @@
     "name": "Duplicate File Detector",
     "version": "1.0",
     "description": "Detects and prevents duplicate file downloads.",
-    "permissions": ["downloads"],
+    "permissions": ["downloads", "storage"],
     "background": {
         "service_worker": "service-worker.js"
     },
@@ -19,8 +19,5 @@
         "16": "icon.png",
         "48": "icon.png",
         "128": "icon.png"
-    },
-    "host_permissions": [
-        "http://localhost:3000/*"
-    ]
+    }
 }
